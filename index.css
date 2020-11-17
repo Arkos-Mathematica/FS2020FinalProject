@@ -1,4 +1,12 @@
 body
 {
   background-color: yellow;
+  font-size: 120%;
+  font-family: cursive;
+  margin: 0px;
+}
+h1
+{
+  text-align: center;
+  font-family: sans-serif;
 }
