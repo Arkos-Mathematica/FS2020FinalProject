@@ -1,7 +1,6 @@
 body
 {
-  background-color: yellow;
-  font-size: 120%;
+  background-color: ;
   font-family: cursive;
   margin: 0px;
 }
@@ -13,4 +12,8 @@ h1
 p
 {
   color: darkgrey;
+}
+.form, .calendar
+{
+  float: left;
 }
