@@ -1,6 +1,6 @@
 body
 {
-  background-color: yellow;
+  background-color: #9EC1A3;
   font-size: 120%;
   font-family: cursive;
   margin: 0px;
@@ -9,4 +9,12 @@ h1
 {
   text-align: center;
   font-family: sans-serif;
+}
+.form
+{
+  background-color: #70A9A1;
+}
+.calendar
+{
+  background-color: #CFE0C3;
 }
