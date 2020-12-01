@@ -1,5 +1,5 @@
 class nEvent {
-  constructor(eName,time=0,date=0,length=10) {
+  constructor(eName,time=0,date=0,length=100) {
     this.eName=eName;
     this.time=time;
     this.date=date;
@@ -8,6 +8,13 @@ class nEvent {
   info()
   {
     alert(`${this.eName} is at ${this.time} on ${this.date}`)
+  }
+  display()
+  {
+    var canvas = document.getElementById("calCan");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle="#FF0000";
+    ctx.fillRect(this.date, this.time, 150, this.length);
   }
 }
 var eList = {};
