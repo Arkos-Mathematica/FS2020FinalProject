@@ -1,8 +1,9 @@
 class nEvent {
-  constructor(eName,time=0,date=0) {
+  constructor(eName,time=0,date=0,length=10) {
     this.eName=eName;
     this.time=time;
     this.date=date;
+    this.length=length;
   }
   info()
   {
