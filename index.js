@@ -21,7 +21,7 @@ var eList = {};
 function newEvent(){
   //get input from document. time and date not yet in html
   let name=document.getElementById("eName").value;
-  let time=0;
+  let time=Number(document.getElementById("drop down").value);
   let date=0;
 
   //dynamically add new instance in object, allowing for bracket notation call
