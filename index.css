@@ -15,10 +15,16 @@ h1
   width: 25%;
   float: left;
   background-color: #70A9A1;
+  height: 2400px;
+}
+.form p
+{
+  text-align: center;
 }
 .calendar
 {
   width: 75%;
   float: right;
   background-color: #CFE0C3;
+  height:2400px;
 }
