@@ -28,5 +28,6 @@ function newEvent(){
   eList[name]= new nEvent(name,time,date);
   //testing
   eList[name].info();
+  eList[name].display();
   console.log(eList);
 }
