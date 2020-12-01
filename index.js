@@ -11,10 +11,14 @@ class nEvent {
   }
   display()
   {
+    //shows event
     var canvas = document.getElementById("calCan");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle="#FF0000";
     ctx.fillRect(this.date, this.time, 150, this.length);
+    ctx.fillStyle="#FFFFFF";
+    ctx.font = "12px Arial";
+    ctx.fillText(this.eName, this.date+10, this.time+20);
   }
 }
 var eList = {};
