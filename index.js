@@ -9,8 +9,16 @@ class nEvent {
     alert(`${this.eName} is at ${this.time} on ${this.date}`)
   }
 }
+var eList = {};
 function newEvent(){
-  let eName=document.getElementById("eName").value;
-  let `${eName}`= new nEvent(eName);
-  eName.info();
+  //get input from document. time and date not yet in html
+  let name=document.getElementById("eName").value;
+  let time=0;
+  let date=0;
+
+  //dynamically add new instance in object, allowing for bracket notation call
+  eList[name]= new nEvent(name,time,date);
+  //testing
+  eList[name].info();
+  console.log(eList);
 }
