@@ -35,3 +35,13 @@ function newEvent(){
   eList[name].display();
   console.log(eList);
 }
+
+window.onload = function(){
+  init();
+  window.addEventListener('resize');
+}
+function init() {
+  var ltpc = document.getElementById('calCan');
+  var context = ltpc.getContext('2d');
+
+}

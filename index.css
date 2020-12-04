@@ -21,10 +21,14 @@ h1
 {
   text-align: center;
 }
-.calendar
+#calendar
 {
   width: 75%;
   float: right;
   background-color: #CFE0C3;
   height:2400px;
+}
+#calCan
+{
+  background-color: white;
 }
