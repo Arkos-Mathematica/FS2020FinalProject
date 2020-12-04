@@ -11,13 +11,32 @@
       <h1>Calendar</h1>
     </head>
     <div class="form">
+      <p>Event Name</p>
       <p><input type="text" id="eName" value="Enter Event Name"></p>
-      <p><button type="button" onclick="newEvent();">Submit</button></p>
-      <p><select id="drop down">
+      <p>Day</p>
+      <p><select id="day">
+        <option value="">Sunday</option>
+        <option value="">Monday</option>
+        <option value="">Tuesday</option>
+        <option value="">Wednesday</option>
+        <option value="">Thursday</option>
+        <option value="">Friday</option>
+        <option value="">Saturday</option>
+      </select></p>
+      <p>Start Time</p>
+      <p><select id="startTime">
         <option value="0">00:00</option>
         <option value="100">01:00</option>
         <option value="300">03:00</option>
       </select></p>
+      <p>length</p>
+      <p><select id="length">
+        <option value="50">00:30</option>
+        <option value="83">00:50</option>
+        <option value="100">01:00</option>
+        <option value="150">01:30</option>
+      </select></p>
+      <p><button type="button" onclick="newEvent();">Submit</button></p>
     </div>
     <div id="calendar">
       <canvas id="calCan"></canvas>
