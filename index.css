@@ -26,7 +26,9 @@ h1
   width: 75%;
   float: right;
   background-color: #CFE0C3;
-  height:2400px;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  height:600px
 }
 #calCan
 {

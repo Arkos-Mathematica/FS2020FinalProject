@@ -25,8 +25,9 @@ var eList = {};
 function newEvent(){
   //get input from document. time and date not yet in html
   let name=document.getElementById("eName").value;
-  let time=Number(document.getElementById("drop down").value);
-  let date=0;
+  let time=Number(document.getElementById("startTime").value);
+  let date=Number(document.getElementById("day").value);
+  let length=Number(document.getElementById("length").value);
 
   //dynamically add new instance in object, allowing for bracket notation call
   eList[name]= new nEvent(name,time,date);
@@ -36,7 +37,7 @@ function newEvent(){
   console.log(eList);
 }
 
-//following two functions are based on Framework Television's video "Canvas Tutorial: Fit to Screen": https://youtu.be/InrYeaIyKhY
+//the following two functions are based on Framework Television's video "Canvas Tutorial: Fit to Screen": https://youtu.be/InrYeaIyKhY
 //I edited down the functions and fit the canvas to a div using the "Determining the dimensions of Elements" page by MDN: https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements
 {
   window.onload = function(){
@@ -44,7 +45,7 @@ function newEvent(){
     window.addEventListener('resize',init,false);
   }
   function init() {
-    document.getElementById('calCan').getContext('2d').canvas.width =document.getElementById('calendar').offsetWidth;
-    document.getElementById('calCan').getContext('2d').canvas.height = document.getElementById('calendar').offsetHeight;
+    document.getElementById('calCan').getContext('2d').canvas.width =(document.getElementById('calendar').offsetWidth)-15;
+    document.getElementById('calCan').getContext('2d').canvas.height = 2400;
   }
 }
