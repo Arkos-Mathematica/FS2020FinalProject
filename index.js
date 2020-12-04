@@ -15,7 +15,7 @@ class nEvent {
     var canvas = document.getElementById("calCan");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle="#FF0000";
-    ctx.fillRect(this.date, this.time, 150, this.length);
+    ctx.fillRect(this.date, this.time, document.getElementById('calendar').offsetWidth/7, this.length);
     ctx.fillStyle="#FFFFFF";
     ctx.font = "12px Arial";
     ctx.fillText(this.eName, this.date+10, this.time+20);
@@ -36,12 +36,15 @@ function newEvent(){
   console.log(eList);
 }
 
-window.onload = function(){
-  init();
-  window.addEventListener('resize');
-}
-function init() {
-  var ltpc = document.getElementById('calCan');
-  var context = ltpc.getContext('2d');
-
+//following two functions are based on Framework Television's video "Canvas Tutorial: Fit to Screen": https://youtu.be/InrYeaIyKhY
+//I edited down the functions and fit the canvas to a div using the "Determining the dimensions of Elements" page by MDN: https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements
+{
+  window.onload = function(){
+    init();
+    window.addEventListener('resize',init,false);
+  }
+  function init() {
+    document.getElementById('calCan').getContext('2d').canvas.width =document.getElementById('calendar').offsetWidth;
+    document.getElementById('calCan').getContext('2d').canvas.height = document.getElementById('calendar').offsetHeight;
+  }
 }
