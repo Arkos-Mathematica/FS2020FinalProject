@@ -10,31 +10,32 @@
     <head>
       <h1>Calendar</h1>
     </head>
-    <div class="form">
+    <div id="form">
+      <h3>Add Event</h3>
       <p>Event Name</p>
       <p><input type="text" id="eName" value="Enter Event Name"></p>
       <p>Day</p>
       <p><select id="day">
-        <option value="1">Sunday</option>
-        <option value="2">Monday</option>
-        <option value="3">Tuesday</option>
-        <option value="4">Wednesday</option>
-        <option value="5">Thursday</option>
-        <option value="6">Friday</option>
-        <option value="7">Saturday</option>
+        <option value="0">Sunday</option>
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
       </select></p>
       <p>Start Time</p>
       <p><select id="startTime">
-        <option value="0">00:00</option>
-        <option value="100">01:00</option>
-        <option value="200">02:00</option>
-        <option value="300">03:00</option>
-        <option value="400">04:00</option>
-        <option value="500">05:00</option>
-        <option value="600">06:00</option>
-        <option value="700">07:00</option>
-        <option value="800">08:00</option>
-        <option value="900">09:00</option>
+        <option value="0000">00:00</option>
+        <option value="0100">01:00</option>
+        <option value="0200">02:00</option>
+        <option value="0300">03:00</option>
+        <option value="0400">04:00</option>
+        <option value="0500">05:00</option>
+        <option value="0600">06:00</option>
+        <option value="0700">07:00</option>
+        <option value="0800">08:00</option>
+        <option value="0900">09:00</option>
         <option value="1000">10:00</option>
         <option value="1100">11:00</option>
         <option value="1200">12:00</option>
@@ -59,6 +60,12 @@
         <option value="200">2 hours</option>
       </select></p>
       <p><button type="button" onclick="newEvent();">Submit</button></p>
+      <hr>
+      <h3>Remove Event</h3>
+      <p>Note: all events with entered name will be removed</p>
+      <p>Event to remove:</p>
+      <p><input type="text" id="eRemove" value="Enter Event Name"></p>
+      <p><button type="button" onclick="remove();">Submit</button></p>
     </div>
     <div id="calendar">
       <canvas id="calCan"></canvas>

@@ -1,7 +1,7 @@
 body
 {
   background-color: #9EC1A3;
-  font-size: 120%;
+  font-size: 100%;
   font-family: cursive;
   margin: 0px;
 }
@@ -9,15 +9,15 @@ h1
 {
   text-align: center;
   font-family: sans-serif;
+  height:auto;
 }
-.form
+#form
 {
   width: 25%;
   float: left;
   background-color: #70A9A1;
-  height: 2400px;
 }
-.form p
+#form p
 {
   text-align: center;
 }
@@ -28,7 +28,7 @@ h1
   background-color: #CFE0C3;
   overflow-y:scroll;
   overflow-x: hidden;
-  height:600px
+  height:500px;
 }
 #calCan
 {
