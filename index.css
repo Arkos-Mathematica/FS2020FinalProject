@@ -23,6 +23,32 @@ a
   margin-right: 15px;
 }
 
+.menu
+{
+
+  list-style-type: none;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  font-size: 120%;
+  clear: both;
+}
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.doc
+{
+  background-color: #70A9A1;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  clear:both;
+}
 #form
 {
   width: 25%;
