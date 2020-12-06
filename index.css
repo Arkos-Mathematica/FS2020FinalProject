@@ -2,13 +2,12 @@ body
 {
   background-color: #9EC1A3;
   font-size: 100%;
-  font-family: cursive;
+  font-family: sans-serif;
   margin: 0px;
 }
 h1
 {
   text-align: center;
-  font-family: sans-serif;
   height:auto;
 }
 header p{
