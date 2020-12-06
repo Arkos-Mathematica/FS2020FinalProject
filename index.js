@@ -16,6 +16,8 @@ class nEvent {
     var ctx = canvas.getContext("2d");
     ctx.fillStyle="#FF0000";
     ctx.fillRect(this.date*document.getElementById('calendar').offsetWidth/7, this.time, document.getElementById('calendar').offsetWidth/7, this.length);
+    ctx.fillStyle="#000000";
+    ctx.strokeRect(this.date*document.getElementById('calendar').offsetWidth/7, this.time, document.getElementById('calendar').offsetWidth/7, this.length);
     ctx.fillStyle="#FFFFFF";
     ctx.font = "12px Arial";
     ctx.fillText(this.eName, this.date*document.getElementById('calendar').offsetWidth/7+10, this.time+20);
