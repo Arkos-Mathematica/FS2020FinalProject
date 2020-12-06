@@ -24,7 +24,8 @@ class nEvent {
 }
 
 function toTime (time){
-  return (time<10? `000${time}`: time<100? `00${time}`: time<1000? `0${time}`: `${time}`);
+  let full = (time<10? `000${String(time)}`: time<100? `00${time}`: time<1000? `0${time}`: `${time}`);
+  return `${full.slice(0,2)}:${String(Number(full.slice(2))*.6).length==1? `0${Number(full.slice(2))*.6}`:Number(full.slice(2))*.6}`;
 }
 
 var eList = {};
