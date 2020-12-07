@@ -5,6 +5,7 @@ class nEvent {
     this.date=date;
     this.length=length;
   }
+  //info is primarily for testing purposes
   info()
   {
     alert(`${this.eName} is at ${this.time} on ${this.date}`)
@@ -41,10 +42,8 @@ function newEvent(){
 
   //dynamically add new instance in object, allowing for bracket notation call
   eList[name]= new nEvent(name,time,date,length);
-  //testing
-  eList[name].info();
+  //show it
   eList[name].display();
-  console.log(eList);
 }
 
 //the following two functions are based on Framework Television's video "Canvas Tutorial: Fit to Screen": https://youtu.be/InrYeaIyKhY
