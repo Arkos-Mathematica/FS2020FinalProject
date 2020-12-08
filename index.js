@@ -42,6 +42,10 @@ function newEvent(){
 
   //dynamically add new instance in object, allowing for bracket notation call
   eList[name]= new nEvent(name,time,date,length);
+
+  //mandatory audio effect. Sound from zapsplat.com
+  let newRing = new Audio('mediaSources/addEventSound.mp3');
+  newRing.play();
   //show it
   eList[name].display();
 }
@@ -68,6 +72,9 @@ function remove (){
   let canvas = document.getElementById('calCan');
   let ctx = canvas.getContext('2d');
   delete eList[`${eRemove}`];
+  //bell sound by Daniel Simion, found on http://soundbible.com/2206-Tolling-Bell.html
+  let delBell = new Audio('mediaSources/deleteEventBell.mp3');
+  delBell.play();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   for (e in eList){
     eList[e].display();
