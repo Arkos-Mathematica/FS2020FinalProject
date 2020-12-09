@@ -20,31 +20,18 @@
     <div id="overview" class="doc">
       <h2>Overview</h2>
       <p>
-        <img src="" alt="clipart related to the word 'overview'" class="iconR">
-        This project uses instances stored in an object - dynamically edited
-        using form input - to create an editable calendar, with options to
-        change the name, time, date, and length of events.</p>
+        <img src="" alt="clipart related to the word 'overview'" class="iconR">This project uses instances stored in an object - dynamically edited using
+        form input - to create an editable calendar, with options to change the
+        name, time, date, and length of events.</p>
     </div>
     <div id="formDoc" class="doc">
       <h2>Form</h2>
       <p>
-        <img src="mediaSources/FormImg.png" alt="a circled form" class="iconL">
-        The form section of the calendar page lets the user interact with 7
-        input variables, one to name the event, one to select a day, one to
-        select a start time, one to choose the length, a button to save and
-        submit these changes, then another text input box to select each event
-        with the given name, and a button under it to delete the chosen events.
-        <br>After clicking the "submit" button for the form, a function finds
-        the values selected in the text input as well as the drop down menus,
-        creating an <strong> instance</strong> of an event class assigned to a
-        property in an object. There were two reasons for this: being able to
-        edit a list of events and - more importantly - the ability to give the
-        property a name using string input (speicifically the event name given
-        by the user) which can later be called using
-        <strong>bracket notation</strong>. When removing an event, the object
-        is updated by deleting all properties with a given name, the canvas is
-        cleared, and then a for/in loop displays all of the remaining events in
-        the updated object.</p>
+        <img src="mediaSources/FormImg.png" alt="a circled form" class="iconL"> The form section of the calendar page lets the user interact with 7 input variables, one to name the event, one to select a day, one to select a start time, one to choose the length, a button to save and submit these changes, then another text input box to select each event with the given name, and a button under it to delete the chosen events. <br> The form section of the calendar page was created by making a div
+        element with an id. The div has text elemts such as headers and
+         paragraphs the instruct the user on what information to input,
+          and below these elements is a text input box for the name of the
+           event, followed by selectors that lets the user select the day, start time, and duration of the event. <br>After clicking the "submit" button for the form, a function finds the values selected in the text input as well as the drop down menus, creating an <strong> instance</strong> of an event class assigned to a property in an object. There were two reasons for this: being able to edit a list of events and - more importantly - the ability to give the property a name using string input (speicifically the event name given by the user) which can later be called using <strong>bracket notation</strong>. When removing an event, the object is updated by deleting all properties with a given name, the canvas is cleared, and then a for/in loop displays all of the remaining events in the updated object.</p>
     </div>
     <div id="calDoc" class="doc">
       <h2>Calendar</h2>
