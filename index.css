@@ -4,12 +4,16 @@ body
   font-size: 100%;
   font-family: sans-serif;
   margin: 0px;
-  color: white;
+  color: #EEEEEE;
 }
 h1
 {
   text-align: center;
   height:auto;
+}
+h3
+{
+  margin-left:20px;
 }
 header p{
   text-align: right;
