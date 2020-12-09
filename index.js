@@ -62,6 +62,8 @@ function newEvent(){
     document.getElementById('calCan').getContext('2d').canvas.height = 2400;
     document.getElementById('form').style.height = `${(window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)<670? 670: (window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)}px`;
     document.getElementById('calendar').style.height = `${(window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)<670? 670: (window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)}px`;
+    //NOTE: WHENEVER THIS IS USED, ONLY ONE EVENT WITH EACH PROPERTY NAME IS SHOWN
+    var e;
     for (e in eList){
       eList[e].display();
     }
@@ -76,7 +78,8 @@ function remove (){
   let delBell = new Audio('mediaSources/deleteEventBell.mp3');
   delBell.play();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  for (e in eList){
-    eList[e].display();
+  var a;
+  for (a in eList){
+    eList[a].display();
   }
 }
