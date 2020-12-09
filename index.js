@@ -60,8 +60,8 @@ function newEvent(){
   function init() {
     document.getElementById('calCan').getContext('2d').canvas.width =(document.getElementById('calendar').offsetWidth);
     document.getElementById('calCan').getContext('2d').canvas.height = 2400;
-    document.getElementById('calendar').style.height = `${window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80}px`;
-    document.getElementById('form').style.height = `${window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80}px`;
+    document.getElementById('form').style.height = `${(window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)<670? 670: (window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)}px`;
+    document.getElementById('calendar').style.height = `${(window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)<670? 670: (window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)}px`;
     for (e in eList){
       eList[e].display();
     }
