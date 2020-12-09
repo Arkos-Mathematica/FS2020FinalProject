@@ -1,9 +1,10 @@
 body
 {
-  background-color: #9EC1A3;
+  background-color: #4D5057;
   font-size: 100%;
   font-family: sans-serif;
   margin: 0px;
+  color: white;
 }
 h1
 {
@@ -29,21 +30,18 @@ a
   list-style-type: none;
   overflow: hidden;
   float: left;
-  width: 100%;
   font-size: 120%;
   clear: both;
-}
-.center
-{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 97%;
+
 }
 
 .doc
 {
-  background-color: #70A9A1;
+  background-color: #9EC1A3;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;

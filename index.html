@@ -10,8 +10,8 @@
       <h1>Documentation</h1>
       <p><a href="Action.html">calendar</a></p>
     </header>
-    <ul class="menu center">
-      <li ><a href="#overview">The form</a></li>
+    <ul class="menu">
+      <li ><a href="#overview">Overview</a></li>
       <li ><a href="#formDoc">The form</a></li>
       <li ><a href="#calDoc" >The Calendar</a></li>
       <li ><a href="#nBarDoc">The Navigation Bar</a></li>
@@ -31,21 +31,15 @@
           and below these elements is a text input box for the name of the
            event, followed by selectors that lets the user select the day, start
             time, and duration of the event.</p>
-      <p>After clicking the "submit" button for the form, a function finds the values
-        selected in the text input as well as the drop down menus, creating an
-        <strong> instance</strong> of an event class assigned to a property in
-        an object. There were two reasons for this: being able to edit a list of
-        events and - more importantly - the ability to give the property a name
-        using string input (speicifically the event name given by the user) which
-        can later be called using <strong>bracket notation</strong>.</p>
+      <p>After clicking the "submit" button for the form, a function finds the values selected in the text input as well as the drop down menus, creating an <strong> instance</strong> of an event class assigned to a property in an object. There were two reasons for this: being able to edit a list of events and - more importantly - the ability to give the property a name using string input (speicifically the event name given by the user) which can later be called using <strong>bracket notation<strong>.</p>
     </div>
     <div id="calDoc" class="doc">
       <h2>Calendar</h2>
-      <p>Each event is</p>
+      <p>In order to dynamically size the canvas (without stretching events), we found a video which explained how to create a canvas that resized to the window dimentions (partially using event listeners), the code of which we adapted to take up less space and fit a div (only the width as we needed a set height) by taking its offsetWidth. Whenever an event is removed or the window is resized, a for loop runs through each parameter of the eList object, displaying all events. We have not added features to interract with the canvas.</p>
     </div>
     <div id="nBarDoc" class="doc">
       <h2>Horizontal Navigation Bar</h2>
-      <p>This feature works by - Ari</p>
+      <p>This feature relies upon an unordered list with heavy CSS styling: the marks are removed and list items floated. It is then centered, both in just.</p>
     </div>
     <div id="navDoc" class="doc">
       <h2>Page Navigation</h2>
