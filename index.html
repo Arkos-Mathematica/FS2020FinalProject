@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <h1>Documentation</h1>
+      <h1 class="hero" id="Documentation">Documentation</h1>
       <p><a href="Action.html">calendar</a></p>
     </header>
     <ul class="menu">
@@ -19,31 +19,31 @@
     </ul>
     <div id="overview" class="doc">
       <h2>Overview</h2>
-      <p>This project uses instances stored in an object - dynamically edited using
+      <p>
+        <img src="mediaSources/OverviewImg.png" alt="website clipart" class="iconR">This project uses instances stored in an object - dynamically edited using
         form input - to create an editable calendar, with options to change the
         name, time, date, and length of events.</p>
     </div>
     <div id="formDoc" class="doc">
       <h2>Form</h2>
-      <p>The form section of the calendar page lets the us3er interact with 7 input variables, one to name the event, one to select a day, one to select a start time, one to choose the length, a button to save and submit these changes, then another text input box to select each event with the given name, and a button under it to delete the chosen events.</p>
-      <p>The form section of the calendar page was created by making a div
+      <p>
+        <img src="mediaSources/FormImg.png" alt="a circled form" class="iconL"> The form section of the calendar page lets the user interact with 7 input variables, one to name the event, one to select a day, one to select a start time, one to choose the length, a button to save and submit these changes, then another text input box to select each event with the given name, and a button under it to delete the chosen events. <br><br> The form section of the calendar page was created by making a div
         element with an id. The div has text elemts such as headers and
          paragraphs the instruct the user on what information to input,
           and below these elements is a text input box for the name of the
-           event, followed by selectors that lets the user select the day, start
-            time, and duration of the event.</p>
-      <p>After clicking the "submit" button for the form, a function finds the values selected in the text input as well as the drop down menus, creating an <strong> instance</strong> of an event class assigned to a property in an object. There were two reasons for this: being able to edit a list of events and - more importantly - the ability to give the property a name using string input (speicifically the event name given by the user) which can later be called using <strong>bracket notation</strong>.</p>
+           event, followed by selectors that lets the user select the day, start time, and duration of the event. <br><br>After clicking the "submit" button for the form, a function finds the values selected in the text input as well as the drop down menus, creating an <strong> instance</strong> of an event class assigned to a property in an object. There were two reasons for this: being able to edit a list of events and - more importantly - the ability to give the property a name using string input (speicifically the event name given by the user) which can later be called using <strong>bracket notation</strong>. When removing an event, the object is updated by deleting all properties with a given name, the canvas is cleared, and then a for/in loop displays all of the remaining events in the updated object.</p>
     </div>
     <div id="calDoc" class="doc">
       <h2>Calendar</h2>
-      <p>In order to dynamically size the canvas (without stretching events), we found a video which explained how to create a canvas that resized to the window dimentions (partially using event listeners), the code of which we adapted to take up less space and fit a div (only the width as we needed a set height) by taking its offsetWidth. Whenever an event is removed or the window is resized, a for loop runs through each parameter of the eList object, displaying all events. We have not added features to interract with the canvas.</p>
+      <p><img src="mediaSources/Calendar.svg" alt="calendar image" class="iconR">In order to dynamically size the canvas (without stretching events), we found a video which explained how to create a canvas that resized to the window dimentions (partially using event listeners), the code of which we adapted to take up less space and fit a div (only the width as we needed a set height) by taking its offsetWidth. Whenever an event is removed or the window is resized, a for loop runs through each parameter of the eList object, displaying all events. We have not added features to interract with the canvas.</p>
     </div>
     <div id="nBarDoc" class="doc">
       <h2>Horizontal Navigation Bar</h2>
-      <p>This feature relies upon an unordered list with heavy CSS styling: the marks are removed and list items floated. It is then centered, both in the justification of list items and allignment of the list. All of the list items contain links, which are styled approrpiately.</p>
+      <p><img src="mediaSources/NavigationImg.png" alt="compass rose" class="iconL">This feature relies upon an unordered list with heavy CSS styling: the marks are removed and list items floated. It is then centered, both in the justification of list items and allignment of the list. All of the list items contain links, which are styled approrpiately.</p>
     </div>
     <div id="navDoc" class="doc">
       <h2>Page Navigation</h2>
+      <p><img src="mediaSources/PageNavigationImg.png" alt="Spyglass" class="iconR"></p>
     </div>
   </body>
 </html>
