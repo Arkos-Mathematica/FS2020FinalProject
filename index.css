@@ -40,7 +40,13 @@ a
   align-items: center;
   justify-content: center;
   width: 97%;
-
+}
+li
+{
+  padding:7px;
+}
+li a {
+  padding:7px;
 }
 
 .doc
