@@ -79,7 +79,7 @@ function newEvent(){
     //set div height to equate to form height
     document.getElementById('calendar').style.height = `${(window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)<670? 670: (window.innerHeight-(document.getElementsByTagName('h1')[0].offsetHeight)-80)}px`;
     //show all events
-    var e;
+    let e;
     for (e in eList){
       eList[e].display();
     }
@@ -99,7 +99,7 @@ function remove (){
 
   //clear the canvas and show all remaining events
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  var a;
+  let a;
   for (a in eList){
     eList[a].display();
   }
