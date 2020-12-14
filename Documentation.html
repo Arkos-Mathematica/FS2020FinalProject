@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Index Page</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="hero" id="Documentation">Documentation</h1>
+      <p><a href="Action.html">calendar</a></p>
+    </header>
+    <ul class="menu">
+      <li ><a href="#overview">Overview</a></li>
+      <li ><a href="#formDoc">The form</a></li>
+      <li ><a href="#calDoc" >The Calendar</a></li>
+      <li ><a href="#nBarDoc">The Navigation Bar</a></li>
+      <li ><a href="#navDoc" >The Page Buttons</a></li>
+    </ul>
+    <div id="overview" class="doc">
+      <h2>Overview</h2>
+      <p>
+        <img src="mediaSources/OverviewImg.png" alt="website clipart" class="iconR">
+        The Calendar alows for a user to create and delete adjustable events on a 24 hour, 7 day calendar. The page has a form area and calendar area, the form alowing unique events to be created or removed, and the calendar displaying these events as inputed.<br><br>
+        This project uses instances stored in an object - dynamically edited using
+        form input - to create an editable calendar, with options to change the
+        name, time, date, and length of events.<br><br>
+        Work distribution for this project was very even: Jordan did most of the HTML and CSS framework. Ari took most of the Javascript. By the end of the project, we worked on all parts without much distinction, primarily bringing in code snippets from previous projects or making slight adjustments to the CSS. The writing for this page was split evenly, with With Jordan describing most of the general functionality of the element and Ari writing about the Javascript. For the final two sections, as there was relatively little to write, we split up the work, with Ari taking one and Jordan taking the other.</p>
+    </div>
+    <div id="formDoc" class="doc">
+      <h2>Form</h2>
+      <p>
+        <img src="mediaSources/FormImg.png" alt="a circled form" class="iconL"> The form section of the calendar page lets the user interact with 7 input variables, one to name the event, one to select a day, one to select a start time, one to choose the length, a button to save and submit these changes, then another text input box to select each event with the given name, and a button under it to delete the chosen events.<br><br>After clicking the "submit" button for the form, a function finds the values selected in the text input as well as the drop down menus, creating an <strong> instance</strong> of an event class assigned to a property in an object. There were two reasons for this: being able to edit a list of events and - more importantly - the ability to give the property a name using string input (speicifically the event name given by the user) which can later be called using <strong>bracket notation</strong>. When removing an event, the object is updated by deleting all properties with a given name, the canvas is cleared, and then a for/in loop displays all of the remaining events in the updated object.</p>
+    </div>
+    <div id="calDoc" class="doc">
+      <h2>Calendar</h2>
+      <p><img src="mediaSources/Calendar.svg" alt="calendar image" class="iconR">In order to dynamically size the canvas (without stretching events), we found a video which explained how to create a canvas that resized to the window dimentions (partially using event listeners), the code of which we adapted to take up less space and fit a div (only the width as we needed a set height) by taking its offsetWidth. Whenever an event is removed or the window is resized, a for loop runs through each parameter of the eList object, displaying all events. We have not added features to interract with the canvas.</p>
+    </div>
+    <div id="nBarDoc" class="doc">
+      <h2>Horizontal Navigation Bar</h2>
+      <p><img src="mediaSources/NavigationImg.png" alt="compass rose" class="iconL">
+        At the top of the page, the user may select a section by clicking a button and the page will shift down to the selected section, which displays information about the page.<br><br>
+        This feature relies upon an unordered list with heavy CSS styling: the marks are removed and list items floated. It is then centered, both in the justification of list items and allignment of the list. All of the list items contain links, which are styled approrpiately.</p>
+    </div>
+    <div id="navDoc" class="doc">
+      <h2>Page Navigation</h2>
+      <p><img src="mediaSources/PageNavigationImg.png" alt="Spyglass" class="iconR">At the top of the page, the user may select a button with the title of the other page that they may travel to. Clicking this button will automatically load the selected page and allow you to interact with that page as normal.</p>
+      <p>Page navigation relies on links designating relative paths in the file system containting both pages in this site. When a link is clicked, the html file is opened for the page being visited. The links are approrpiately styled in CSS to be consistent across all sites.</p>
+    </div>
+  </body>
+</html>
+ 
