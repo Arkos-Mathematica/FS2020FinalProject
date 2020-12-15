@@ -61,7 +61,7 @@ function newEvent(){
   eList[name].display();
 }
 
-//the following two functions are based on Framework Television's video "Canvas Tutorial: Fit to Screen": https://youtu.be/InrYeaIyKhY
+//the following two functions are based on Framework Television's video "Canvas Tutorial: Fit to Screen": https://youtu.be/InrYeaIyKhY. The video explains how to to resize a canvas to a window and deal with resizing. It effectively calls a function whenever the event listener for a "resize" is set off. The function that resizes the canvas effectively takes the 2d canvas element and adjusts the built in width and height properties.
 //I edited down the functions and fit the canvas to a div using the "Determining the dimensions of Elements" page by MDN: https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements
 {
   window.onload = function(){
