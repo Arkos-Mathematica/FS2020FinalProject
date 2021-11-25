@@ -7,6 +7,11 @@ class nEvent {
     this.length=length;
   }
   //info is primarily for testing purposes
+  //random comment
+  random_function()
+  {
+    alert('hellow')
+  }
   info()
   {
     alert(`${this.eName} is at ${this.time} on ${this.date}`)
